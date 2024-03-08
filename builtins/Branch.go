@@ -1,4 +1,3 @@
-
 package builtins
 
 import (
@@ -10,9 +9,10 @@ type BranchNode struct {
 }
 
 func NewBranchNode() src.NodeInterface {
-	return &BranchNode{
+	node := &BranchNode{
 		NodeInterface: src.NewNode(),
 	}
+	return node
 }
 
 // Execute no need to write unless it executes something

@@ -1,0 +1,10 @@
+
+define Text {
+    @inputs()
+    @outputs(
+        exec: (label: 'Exec Label', type: @Exec),
+        value: (label: 'Value Label', type:
+            @Input(control: Text, initial: 'Initial value', readonly: false)
+        )
+    )
+}
