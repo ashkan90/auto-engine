@@ -12,6 +12,12 @@ func NewBranchNode() src.NodeInterface {
 	node := &BranchNode{
 		NodeInterface: src.NewNode(),
 	}
+	node.AddInput("exec", src.NewInput(src.NewSocket("empty"), "Exec Label", false))
+	node.AddInput("condition", src.NewInput(src.NewSocket("empty"), "Condition", false))
+
+	node.AddOutput("exec", src.NewOutput(src.NewSocket("empty"), "Exec Label", false))
+	node.AddOutput("true", src.NewOutput(src.NewSocket("empty"), "True Label", false))
+	node.AddOutput("false", src.NewOutput(src.NewSocket("empty"), "False Label", false))
 	return node
 }
 
