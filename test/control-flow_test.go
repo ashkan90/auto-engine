@@ -2,7 +2,7 @@ package test
 
 import (
 	"github.com/ashkan90/auto-core/src"
-	"github.com/ashkan90/auto/engine"
+	"github.com/ashkan90/auto-engine/engine"
 	"log"
 	"testing"
 )
